@@ -1,0 +1,153 @@
+:root {
+    --bgcolor: #1e1f20;
+    --color1: #a6a8a6;
+    --color2: #666766;
+    --color4: white;
+    --color5: #1363DF;
+    --color6: #0098fd;
+}
+
+main {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    display: block;
+}
+
+header,
+footer {
+    height: 100px;
+    width: 100%;
+    background-color: var(--bgcolor);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header {
+    border-bottom: 2px solid #666766;
+}
+
+footer {
+    border-top: 2px solid #666766;
+}
+
+.navachor {
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+i {
+    font-size: 19pt;
+}
+
+.bars {
+    display: none;
+}
+
+fieldset {
+    margin-top: 30px;
+    height: 300px;
+    width: 300px;
+    border: 5px solid var(--color1);
+    outline: none;
+    padding: 20px;
+    border-radius: 1rem;
+}
+
+legend {
+    padding: 10px;
+    border: none;
+    color: var(--color6);
+    letter-spacing: 5px;
+    font-size: 14pt;
+    border-top: none;
+    border-bottom: none;
+    font-weight: 900;
+    background-color: var(--bgcolor);
+}
+
+table {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    height: 30px;
+    width: 100%;
+    outline: none;
+    border: none;
+    cursor: default;
+    transition: all 0.5s;
+    font-size: 12pt;
+    color: black;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.login_btn {
+    width: 50%;
+    height: 40px;
+    font-size: 14pt;
+    letter-spacing: 5px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background: var(--color5);
+    border: none;
+    /* background-color: rgb(185, 185, 185); */
+    color: white;
+    border-radius: 0.5rem;
+    transition: 0.5s;
+}
+
+.login_btn:hover {
+    background-color: var(--color6);
+}
+
+a {
+    cursor: pointer;
+    color: white;
+    font-weight: 800;
+    transition: 0.5s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5d5d5d;
+}
+
+#msg {
+    display: none;
+    color: #28e928;
+    letter-spacing: 5px;
+    font-size: larger;
+    font-family: fantasy;
+    font-weight: 400;
+}
+
+@media screen and (max-width:600px) {
+    fieldset {
+        width: 200px;
+    }
+    .navachor {
+        margin-left: 10px;
+    }
+    i {
+        font-size: 10pt;
+    }
+    footer {
+        margin-top: 200px;
+    }
+    .ddl1 {
+        margin-top: 525px;
+        width: 80%;
+    }
+}

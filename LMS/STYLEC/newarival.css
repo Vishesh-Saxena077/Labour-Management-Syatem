@@ -1,0 +1,235 @@
+:root {
+    --bgcolor: #1e1f20;
+    --color1: #a6a8a6;
+    --color2: #666766;
+    --color4: white;
+    --color5: #1363DF;
+    --color6: #0098fd;
+    --color7: #71c6ff;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px black;
+    z-index: 1;
+}
+
+.logout_div {
+    display: none;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(187, 184, 184, 0.7);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+.dialog_box {
+    height: 200px;
+    width: 350px;
+    background-color: var(--color4);
+    border-radius: 1rem;
+    padding: 10px 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_dialog_box {
+    height: 90%;
+    width: 100%;
+    /* background-color: black; */
+    border-radius: 1rem;
+    padding: 10px;
+}
+
+h3 {
+    color: black;
+}
+
+.logout_btn {
+    height: 40px;
+    width: 100px;
+    outline: none;
+    border: none;
+    font-size: 12pt;
+}
+
+.logout_btn {
+    background-color: var(--color6);
+    color: var(--color4);
+}
+
+.menu_tray {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_tray_inner1 {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.menu_tray_btn {
+    height: 50px;
+    width: 50px;
+    margin-right: 40px;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.menu_tray_btn i {
+    font-size: 16pt;
+    color: var(--color4)
+}
+
+.menu_tray_btn i:hover {
+    color: greenyellow;
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.adminpannel_base {
+    height: 200px;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inner_adminpannel {
+    height: auto;
+    width: auto;
+    /* background-color: aquamarine; */
+    padding: 10px;
+}
+
+.adminpannel_btn {
+    height: 150px;
+    width: 500px;
+    font-size: 16pt;
+    box-shadow: 0px 0px 5px 0px black;
+    background: none;
+    outline: none;
+    border: none;
+    color: var(--color6);
+    transition: 0.5s;
+}
+
+.adminpannel_btn:hover {
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+.list {
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sreach_base {
+    height: 30px;
+    width: 400px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#myinput {
+    height: 30px;
+    width: 90%;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.alluserlist_basediv {
+    margin-top: 20px;
+    height: 500px;
+    width: 1200px;
+    /* background-color: var(--color1); */
+    padding: 10px;
+    overflow-x: scroll;
+    box-shadow: 0px 0px 10px 0px black;
+}
+
+table {
+    height: auto;
+    width: 100%;
+    border: 1px solid #1e1f20;
+    padding: 5px;
+}
+
+table,
+td,
+th {
+    border-collapse: collapse;
+    border: 1px solid #0098fd;
+}
+
+.heading {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+
+.table_content {
+    font-weight: 600;
+    height: 50px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    padding: 10px;
+}
+
+.img {
+    height: 100%;
+    width: 50%;
+    background-color: #0098fd;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: 1px solid #0098fd;
+    height: 200px;
+    width: 100%;
+}
+
+@media (max-width:500px) {
+    .dialog_box {
+        height: 200px;
+        width: 250;
+    }
+    h3 {
+        font-size: 12pt;
+    }
+    .adminpannel_base {
+        height: 400px;
+        flex-direction: column;
+    }
+    .adminpannel_btn {
+        width: 200px;
+        font-size: 12pt;
+    }
+}
